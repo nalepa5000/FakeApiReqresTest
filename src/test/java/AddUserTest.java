@@ -1,5 +1,6 @@
 import io.restassured.http.ContentType;
 import model.User;
+import org.apache.http.HttpStatus;
 import org.testng.annotations.Test;
 import java.io.File;
 import java.util.HashMap;
@@ -22,7 +23,7 @@ public class AddUserTest extends BaseTest {
                 when()
                 .post().
                 then()
-                .statusCode(201);
+                .statusCode(HttpStatus.SC_OK);
     }
 
     @Test
@@ -35,7 +36,7 @@ public class AddUserTest extends BaseTest {
                 when()
                 .post().
                 then()
-                .statusCode(201);
+                .statusCode(HttpStatus.SC_OK);
     }
 
     @Test
@@ -51,7 +52,7 @@ public class AddUserTest extends BaseTest {
                 when()
                 .post().
                 then()
-                .statusCode(201);
+                .statusCode(HttpStatus.SC_OK);
     }
 
 }
