@@ -23,7 +23,7 @@ public class AddUserTest extends BaseTest {
                 when()
                 .post().
                 then()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_CREATED);
     }
 
     @Test
@@ -36,7 +36,7 @@ public class AddUserTest extends BaseTest {
                 when()
                 .post().
                 then()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_CREATED);
     }
 
     @Test
@@ -52,7 +52,7 @@ public class AddUserTest extends BaseTest {
                 when()
                 .post().
                 then()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_CREATED);
     }
 
 }
