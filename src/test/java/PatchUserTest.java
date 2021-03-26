@@ -7,7 +7,7 @@ public class PatchUserTest extends BaseTest {
 
     @Test
     public void patchUser(){
-        User newUser = new User("new.email@reqres.in");
+        User newUser = User.builder().email("new.email@reqres.in").build();
 
         given()
                 .spec(reqSpec)
